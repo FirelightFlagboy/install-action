@@ -371,6 +371,7 @@ download_from_manifest() {
   download_from_download_info "$@"
 }
 download_from_download_info() {
+  local tool="$1"
   read_download_info "$@"
   download_and_extract "${url}" "${checksum}" "${bin_dir}" "${bin_in_archive[@]}"
 }
