@@ -224,7 +224,7 @@ jobs:
       - run: apk --no-cache del bash
         shell: sh
         if: startsWith(matrix.container, 'alpine')
-      - uses: ./
+      - uses: $/
         with:
           tool: ${{ steps.tool-list.outputs.tool }}
       # Test all shells listed in https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsshell
@@ -277,7 +277,7 @@ jobs:
       # cross attempts to install rust-src when Cargo.toml is available even if `cross --version`
       - run: rm -- Cargo.toml
       - run: env
-      - uses: ./
+      - uses: $/
         with:
           # NB: Update alias list in tools/ci/release-post-commit.sh, case for aliases in main.sh,
           # and match for alias for tools/codegen/src/tools-markdown.rs.
@@ -313,7 +313,7 @@ jobs:
       # cross attempts to install rust-src when Cargo.toml is available even if `cross --version`
       - run: rm -- Cargo.toml
       - run: env
-      - uses: ./
+      - uses: $/
         id: install
         continue-on-error: ${{ matrix.fallback == 'none' }}
         with:
