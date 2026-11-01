@@ -10,6 +10,22 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 
 ## [Unreleased]
 
+- Update `wasm-tools@latest` to 1.263.0.
+
+- Update `wasm-pack@latest` to 0.15.1.
+
+- Update `wasm-bindgen@latest` to 0.2.130.
+
+- Update `vacuum@latest` to 0.36.1.
+
+- Update `prek@latest` to 0.5.9.
+
+- Update `mise@latest` to 2026.10.25.
+
+- Update `kingfisher@latest` to 2.16.0.
+
+- Update `cargo-binstall@latest` to 1.26.2.
+
 ## [2.88.1] - 2026-10-30
 
 - Update `wasmtime@latest` to 50.0.1.
