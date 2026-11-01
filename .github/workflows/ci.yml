@@ -122,10 +122,11 @@ jobs:
           - container: opensuse/leap:latest # glibc
           # --------------------------------------------------------------------
           # apk
+          - container: alpine:3.24 # musl 1.2.6
           - container: alpine:3.23 # musl 1.2.5
           - container: alpine:3.22 # musl 1.2.5
-          - container: alpine:3.21 # musl 1.2.5
           # Skip intermediate versions that have reached EoL by default.
+          # - container: alpine:3.21 # musl 1.2.5, EoL
           # - container: alpine:3.20 # musl 1.2.5, EoL
           # - container: alpine:3.19 # musl 1.2.4, EoL
           # - container: alpine:3.18 # musl 1.2.4, EoL
